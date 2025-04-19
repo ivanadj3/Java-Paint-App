@@ -20,3 +20,25 @@ This project was created as a personal practice and learning project using Java 
 - Java
 - Swing (AWT & Swing components)
 - Object-Oriented Programming
+
+## • Components
+
+### `geometry/`
+Contains all shape definitions and behavior:
+- `Circle`, `Donut`, `Line`, `Rectangle`, `Point`
+- Abstract base classes/interfaces: `Shape`, `SurfaceShape`, `Moveable`
+
+### `drawing/`
+Main application interface:
+- `FrmDrawing`: main window
+- `PnlDrawing`: drawing area (custom JPanel)
+- `Dlg<Shape>` dialogs: input dialogs for creating/editing shapes
+
+### `sort/`
+GUI for sorting:
+- `FrmSort`: sorting window
+- `DlgSort`: confirmation/input dialog for sort settings
+
+### `stack/`
+Manages undo/redo functionality using stacks:
+- Stores command objects or snapshots to revert/redo actions
